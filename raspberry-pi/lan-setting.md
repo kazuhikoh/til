@@ -21,10 +21,9 @@ WPA-PSK(AES)方式の場合
 * /etc/network/interfaces
 
   ```
-  auto wlan0
   allow-hotplug wlan0
-  iface wlan0 inet dhcp
-    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+  iface wlan0 inet manual
+    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
   ```
 
 * /etc/wpa_supplicant/wpa_supplicant.conf
@@ -37,19 +36,28 @@ WPA-PSK(AES)方式の場合
     ```
     ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
     update_config=1
-  
     network={
       ssid="SSID"
       # pskのベタ書きコメントは消しておく.暗号化されたものだけ記述
       psk=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-      proto=WPA
+      proto=RSN
       key_mgmt=WPA-PSK
       pairwise=CCMP
       group=CCMP
       priority=2
     }
     ```
+
+    * network={...}
+  
+      |key|value|note|
+      |---|-----|----|
+      |proto|WPA<br>RSA|WPA<br>WPA2|
+      |key_mgmt|WPA-PSK|???|
+      |pairwise|CCMP|???|
+      |group|CCMP|???|
+      |priority|2|???|
 
 固定IPを割り振る
 --------
