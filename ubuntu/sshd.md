@@ -32,3 +32,6 @@ PasswordAuthentication no
 AllowTcpForwarding yes
 GatewayPorts yes
 ```
+
+参考
+* [そこそこセキュアなlinuxサーバーを作る - Qiita](http://qiita.com/cocuh/items/e7c305ccffb6841d109c)
