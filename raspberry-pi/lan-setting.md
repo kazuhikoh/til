@@ -19,45 +19,44 @@ networking
 WPA-PSK(AES)方式の場合
 --------
 * /etc/network/interfaces
-
-  ```
-  allow-hotplug wlan0
-  iface wlan0 inet manual
-    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
-  ```
+```
+allow-hotplug wlan0
+iface wlan0 inet manual
+wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+```
 
 * /etc/wpa_supplicant/wpa_supplicant.conf
   * wpa_passphrase で設定の雛形を出力
-    ```
-    wpa_passphrase SSID PASSPHRASE >> /etc/wpa_supplicant/wpa_supplicant.conf
-    ```
+```
+wpa_passphrase SSID PASSPHRASE >> /etc/wpa_supplicant/wpa_supplicant.conf
+```
   
   * こんなかんじにする
-    ```
-    ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
-    update_config=1
-    network={
-      ssid="SSID"
-      # pskのベタ書きコメントは消しておく.暗号化されたものだけ記述
-      psk=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+network={
+  ssid="SSID"
+  # pskのベタ書きコメントは消しておく.暗号化されたものだけ記述
+  psk=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-      proto=RSN
-      key_mgmt=WPA-PSK
-      pairwise=CCMP
-      group=CCMP
-      priority=2
-    }
-    ```
+  proto=RSN
+  key_mgmt=WPA-PSK
+  pairwise=CCMP
+  group=CCMP
+  priority=2
+}
+```
 
-    * network={...}
+  * network={...}
   
-      |key|value|note|
-      |---|-----|----|
-      |proto|WPA<br>RSA|WPA<br>WPA2|
-      |key_mgmt|WPA-PSK|???|
-      |pairwise|CCMP|???|
-      |group|CCMP|???|
-      |priority|2|???|
+|key|value|note|
+|---|-----|----|
+|proto|WPA<br>RSA|WPA<br>WPA2|
+|key_mgmt|WPA-PSK|???|
+|pairwise|CCMP|???|
+|group|CCMP|???|
+|priority|2|???|
 
 固定IPを割り振る
 --------
