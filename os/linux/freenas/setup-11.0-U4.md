@@ -42,6 +42,11 @@ Console setup > `6) Configure DNS`
 * `resolv.conf` を確認すると、ちゃんと設定されてる
 * `resolv.conf` に書いておいても再起動すると消される
 
+## Default Gateway
+
+Console setup > `4) Configure Default Route`
+* `Default Route` = `Default Gateway` のこと
+
 ## 無線LAN
 
 Intel ワイヤレスアダプターのドライバが入っていないので、インストールする必要がある
@@ -49,3 +54,4 @@ Intel ワイヤレスアダプターのドライバが入っていないので�
 * 今回は `Intel Dual Band Wireless-AC 3160`
 
 * [LinuxでインテルNUCの内臓Wifiが認識されない場合の対処](https://qiita.com/tanuki-project/items/aa31db3d9c9d90822bc7)
+
