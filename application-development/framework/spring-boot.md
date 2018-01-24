@@ -59,3 +59,8 @@ public class StandaloneSample implements CommandLineRunner {
     
 }
 ```
+
+# Tomcat にデプロイ可能な war の作成
+
+* [85.1 Create a deployable war file](https://docs.spring.io/spring-boot/docs/current/reference/html/howto-traditional-deployment.html#howto-create-a-deployable-war-file)
+* アプリの main となるクラスに `SpringBootServletInitializer ` を継承させる
