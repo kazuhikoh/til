@@ -80,3 +80,5 @@ Error: Cannot find module 'semver'
 
 ```
 
+原因わからず、未解決。
+* `C:\Users\xxxxxxxx\AppData\Roaming\nvm\v9.8.0` を [公式HP](https://nodejs.org/ja/) からDLしたものに置き換えて対処。
