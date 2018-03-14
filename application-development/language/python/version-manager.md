@@ -1,4 +1,4 @@
-# バージョン管理ツール
+# Python Version Manager
 
 - venv
 - virtualenv
