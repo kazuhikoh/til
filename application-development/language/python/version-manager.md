@@ -1,3 +1,16 @@
+# バージョン管理ツール
+
+- venv
+- virtualenv
+- pipenv
+- pyenv
+- conda
+- ~~pyvenv~~
+
+参考
+- [Pythonの仮想環境についてのまとめ](https://qiita.com/nobolis/items/9edcc9adca302f2959c7)
+- [pyenvが必要かどうかフローチャート](https://qiita.com/shibukawa/items/0daab479a2fd2cb8a0e7)
+
 # [pyenv](https://github.com/pyenv/pyenv)
 
 ## Install
