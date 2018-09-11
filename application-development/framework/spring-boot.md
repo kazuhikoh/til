@@ -59,6 +59,20 @@ public class StandaloneSample implements CommandLineRunner {
     
 }
 ```
+# 実行可能 jar の作成
+
+* [61. Installing Spring Boot Applications](https://docs.spring.io/spring-boot/docs/current/reference/html/deployment-install.html)
+* Gradle
+```
+dependencies {
+  		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+}
+
+bootJar {
+ 	launchScript()
+}
+```
+* `gradle bootJar` で生成 (`gradle build` すると呼ばれる)
 
 # Tomcat にデプロイ可能な war の作成
 
