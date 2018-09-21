@@ -27,11 +27,12 @@ FreeNas + ZFS
 それで見つけたのが
 
 <img src="https://www.ask-corp.jp/products/images/fractal-design/node-304_01.jpg" width="100">
+
 [Fractal Design Node 304](https://www.ask-corp.jp/products/fractal-design/cube-pccase/node-304.html)
-  * 見た目がかっこいい
-  * 3.5インチ x6 を格納できる
-  * 対応マザーボード: Mini-ITX用
-  * 対応電源: ATX 12V（奥行き160mmまで）
+* 見た目がかっこいい
+* 3.5インチ x6 を格納できる
+* 対応マザーボード: Mini-ITX用
+* 対応電源: ATX 12V（奥行き160mmまで）
 
 ### パーツ選び
 
